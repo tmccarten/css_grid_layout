@@ -1,11 +1,16 @@
 /* -- BASE STYLING -- */
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   min-height: 100%;
 }
 
 body {
   font-family: "Roboto", "arial", sans-serif;
+  font-weight: 300;
   background: linear-gradient(#252c46, #384266);
   background: -webkit-linear-gradient(#252c46, #384266); /* For Safari 5.1 to 6.0 */
   background-color: #252c46;
@@ -70,6 +75,9 @@ ul {
 .sidebar {
   background-color: #21283f;
   padding: 0 1rem;
+  width: 288px;
+  grid-area: sidebar;
+  justify-self: center;
 }
 
 .sidebar__blog-post {
@@ -103,9 +111,33 @@ ul {
 }
 
 .grid-wrapper {
+  display: grid;
   grid-area: tiles;
+  grid-template-columns: 288px;
+  grid-template-rows: 288px auto auto auto auto auto;
+  justify-content: center;
+  grid-gap: 12px;
 }
 
-.sidebar {
-  grid-area: sidebar;
+.grid-wrapper__tile {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #21283f;
+  padding: 0 2rem;
+  font-family: "Merriweather";
+  text-align: center;
+}
+
+.grid-wrapper__tile--plain {
+  font-family: "Roboto";
+}
+
+.grid-wrapper__tile--plain:first-child {
+  clip-path: polygon(50% 100%, 0 80%, 0 0, 100% 0, 100% 80%);
+}
+
+.grid-wrapper__tile--link {
+  text-decoration: underline;
 }
