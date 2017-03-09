@@ -82,6 +82,8 @@ ul {
 	flex: 0 0 auto;
 	color: #e5eda7;
 	border: 1px dotted #1b2133;
+  width: 62px;
+  height: 62px;
 }
 
 .sidebar__blog-date span {
@@ -129,7 +131,7 @@ ul {
   text-decoration: underline;
 }
 
-@media screen and (min-width: 534px) {
+@media screen and (min-width: 534px) { /* -- two columns -- */
 
   .page-wrapper {
     grid-template-columns: auto;
@@ -156,7 +158,16 @@ ul {
 
 }
 
-@media screen and (min-width: 757px) {
+@media screen and (min-width: 757px) { /* -- three columns -- */
+
+  .sidebar {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+
+  .sidebar__blog-date {
+    font-size: 1rem;
+  }
 
   .grid-wrapper {
     grid-template-columns: repeat(3, 230px);
@@ -171,5 +182,31 @@ ul {
 
   .site-nav__item > * {
     margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 987px) { /* -- four columns -- */
+
+  .grid-wrapper {
+    grid-template-columns: repeat(4, 230px);
+  }
+}
+
+@media screen and (min-width: 1229px) { /* -- three columns plus sidebar -- */
+
+  .sidebar {
+    background: none;
+    border-left: 2px dotted #384266;
+    border-right: 2px dotted #384266;
+    max-width: 423px;
+  }
+
+  .page-wrapper {
+    grid-template-areas: "tiles sidebar";
+    justify-content: space-between;
+  }
+
+  .grid-wrapper {
+    grid-template-columns: repeat(3, 230px);
   }
 }
