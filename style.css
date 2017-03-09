@@ -1,0 +1,65 @@
+/* -- BASE STYLING -- */
+
+html {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Roboto", "arial", sans-serif;
+  background: linear-gradient(#252c46, #384266);
+  background: -webkit-linear-gradient(#252c46, #384266); /* For Safari 5.1 to 6.0 */
+  background-color: #252c46;
+  color: white;
+  margin: 0;
+  padding: 0 3%;
+}
+
+.site-container {
+  max-width: 1200px;
+  margin: 50px auto 0 auto;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* -- HEADER -- */
+
+.site-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 50px;
+  font-family: 'Merriweather';
+}
+
+.header__logo {
+  width: 250px;
+  align-self: center;
+}
+
+.site-nav__block {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 757px) {
+  .site-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .site-nav__item > * {
+    margin-left: 30px;
+  }
+}
