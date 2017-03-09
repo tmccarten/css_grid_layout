@@ -92,3 +92,20 @@ ul {
 .sidebar__blog-date span {
 	display: block;
 }
+
+/* -- MAIN -- */
+
+.page-wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "tiles"
+                       "sidebar"
+}
+
+.grid-wrapper {
+  grid-area: tiles;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
