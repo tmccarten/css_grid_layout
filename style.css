@@ -141,3 +141,25 @@ ul {
 .grid-wrapper__tile--link {
   text-decoration: underline;
 }
+
+@media screen and (min-width: 534px) {
+
+  .grid-wrapper {
+    grid-template-columns: 230px 230px;
+    grid-template-rows: repeat(3, 230px);
+  }
+
+  .grid-wrapper__tile {
+    background: radial-gradient(ellipse at center, #3f486d 0%, #252c46 100%);
+    border: 1px dotted #1b2133;
+  }
+
+  .grid-wrapper__tile--plain {
+    background: #21283f;
+    border: none;
+  }
+
+  .grid-wrapper__tile--plain:first-child {
+    clip-path: none;
+  }
+}
