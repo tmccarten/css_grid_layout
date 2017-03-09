@@ -3,7 +3,7 @@
   <head>
   <meta charset="utf-8">
   <title>CSS Grid Layout Demonstrator by Thomas McCarten</title>
-      <meta name="description" content="Demonstration of CSS Grid Layout, a business homepage">
+      <meta name="description" content="Demonstration of CSS Grid Layout, Thomas McCarten portfolio homepage">
       <meta name="keywords" content="CSS Grid">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,6 +12,63 @@
   </head>
 
   <body>
+
+    <header class="header">
+      <h1 class="logo"><img src="img/logo.svg" width="250" height="64" alt="Thomas McCarten Web Design"></h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="page-wrapper">
+
+      <div class="grid-wrapper">
+        <div class="grid-wrapper__tile--plain">
+          <p>Hello!</p>
+          <p>I'm a creative front-end web developer based in Manchester</p>
+          <p><a href="#">Get in touch!</a></p>
+        </div>
+
+        <div class="grid-wrapper__tile--plain">
+          <p><a href="#">twitter</a> | <a href="#">github</p>
+        </div>
+
+        <a href="#" class="grid-wrapper__tile">
+          <h2>Case Studies</h2>
+        </a>
+
+        <a href="#" class="grid-wrapper__tile">
+          <h2>Logo Design</h2>
+        </a>
+
+        <a href="#" class="grid-wrapper__tile">
+          <h2>Illustration</h2>
+        </a>
+
+        <a href="#" class="grid-wrapper__tile">
+          <h2>Other</h2>
+        </a>
+      </div>
+
+      <aside class="sidebar">
+        <ul>
+          <li><span class="blog-date">25<span>Feb</span></span><a href="#" title="Blog post about the changes made to Thomas McCarten's portfolio website">Portfolio updates and improvements</a></li>
+          <li><span class="blog-date">02<span>Dec</span></span><a href="#" title="Blog post about how he optimised his portfolio website by Thomas McCarten">Optimising for increased speed and integrity</a></li>
+          <li><span class="blog-date">06<span>Nov</span></span><a href="#" title="Blog post about how he built his portfolio website by Thomas McCarten">Building my portfolio</a></li>
+          <li><span class="blog-date">26<span>Oct</span></span><a href="#" title="Blog post about the digital industry and front-end by Thomas McCarten">Front-end in a booming digital industry</a></li>
+        </ul>
+      </aside>
+
+    </div>
+
+    <footer class="footer">
+      <p>All rights reserved. Thomas McCarten</p>
+    </footer>
 
   </body>
 
