@@ -53,6 +53,7 @@ ul {
 }
 
 @media screen and (min-width: 757px) {
+
   .site-header {
     flex-direction: row;
     justify-content: space-between;
@@ -62,4 +63,32 @@ ul {
   .site-nav__item > * {
     margin-left: 30px;
   }
+}
+
+/* -- SIDEBAR -- */
+
+.sidebar {
+  background-color: #21283f;
+  padding: 0 1rem;
+}
+
+.sidebar__blog-post {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.sidebar__blog-date {
+	display: inline;
+	text-align: center;
+	margin-right: 12px;
+	background-color: #252c46;
+	padding: 0.8em 1em;
+	flex: 0 0 auto;
+	color: #e5eda7;
+	border: 1px dotted #1b2133;
+}
+
+.sidebar__blog-date span {
+	display: block;
 }
